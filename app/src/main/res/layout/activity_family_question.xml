@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下方將會敘述 7 個情境"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="若您覺得敘述中是失智症的請選 "
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="A"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="若您覺得敘述中是正常老化請選 "
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:text="B"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="會忘記鎖匙放在哪"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ1"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ1_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ1_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="就算手中有鎖匙也不知道如何使用和如何稱呼鎖匙"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ2"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ2_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ2_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="忘記的事之後會想起  僅忘記片段經提醒可回想起"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ3"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ3_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ3_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="完全忘記自己所說 所做 幾乎全盤忘記 經提醒也無法回想起"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ4"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ4_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ4_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="忘記之後路怎麼走但經情境式的提示 如常走過的轉角 可再想起"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ5"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ5_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ5_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="會在熟悉的環境迷路無法走複雜的路 時間 季節錯亂"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ6"
+                android:textSize="20sp"
+                android:layout_gravity="right">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ6_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ6_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. "
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_FQ7"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="僅能用簡單的詞語表達或無法清楚的表達語意"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/rg_FQ7"
+                android:layout_gravity="right">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_FQ7_yes"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_FQ7_no"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="返回"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_FQ_back_FF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="略過"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_ignore"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:gravity="center">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="確定"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_understand"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

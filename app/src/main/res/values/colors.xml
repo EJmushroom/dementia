@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ADD8E6</color>
+    <color name="colorPrimaryDark">#ADD8E6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bluegreen">#20B2AA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="skyblue">#ADD8E6</color>
+    <color name="black">#000000</color>
+    <color name="red">	#FF0000</color>
+
+    <color name="innergreen">#2a8c79</color>
+    <color name="colorRed">#EF5350</color>
+    <color name="colorButtomNormal">#d6d7d7</color>
+    <color name="colorGreen">#68d991</color>
+    skyblue=bulegreen
+    <color name="LightSlateGray">#778899</color>
+    <color name="SlateGray">#708090</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FF8C00</color>
+    <color name="colorDarkGreen">#68c5b2</color>
+
+
+</resources>

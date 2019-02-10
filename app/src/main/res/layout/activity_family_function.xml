@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/skyblue">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="您好，"
+        android:id="@+id/tv_hello_family"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_family_test"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/start"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_family_record"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/history"
+            android:scaleType="centerInside"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_FMap"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/hospital"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_FAboutUs"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/about"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_family_modify"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/edit"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_family_logout"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logout"
+            android:scaleType="centerInside"/>
+
+
+    </LinearLayout>
+</LinearLayout>

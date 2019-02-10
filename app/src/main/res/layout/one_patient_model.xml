@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/skyblue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="編號："
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/SlateGray"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="編號"
+                android:id="@+id/tv_patient_number"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/SlateGray"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="吳阿瑋"
+                android:id="@+id/tv_patient_name"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="男"
+            android:id="@+id/tv_patient_gender"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血型："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="AB"
+            android:id="@+id/tv_patient_blood"
+            android:gravity="center"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日："
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/SlateGray"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2999-12-31"
+                android:id="@+id/tv_patient_birthday"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doctor_which_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="請先選擇量表種類！"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.72"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_AD8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ad8"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_CDR"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/cdr"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_NPI_Q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/skyblue"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/npiq"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_MMSE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.55"
+                    android:background="@color/skyblue"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/mmse" />
+
+                <ImageButton
+                    android:id="@+id/btn_MOCA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+                    android:background="@color/skyblue"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/moca" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.11"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="1dp">
+
+            <ImageButton
+                android:id="@+id/btn_back_DRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/oback"
+                android:background="@color/skyblue"
+                android:scaleType="centerInside"/>
+
+            <ImageButton
+                android:id="@+id/btn_enter_test_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ok"
+                android:background="@color/skyblue"
+                android:scaleType="centerInside"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.16"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

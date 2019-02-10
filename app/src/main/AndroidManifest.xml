@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ncyu.login">
+
+    <!--
+     The ACCESS_COARSE/FINE_LOCATION permissions are not required to us e
+     Google Maps Android API v2, but you must specify either coarse or fine
+     location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=" AIzaSyDxvyxGeWdw99xyr2evzNls30mWTDIMrNo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".choose_identity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".family_register" />
+        <activity android:name=".family_login" />
+        <activity android:name=".doctor_login" />
+        <activity android:name=".doctor_register" />
+        <activity android:name=".visitor_function" />
+        <activity android:name=".family_function" />
+        <activity android:name=".doctor_function" />
+        <activity android:name=".family_choose_test" />
+        <activity android:name=".visitor_choose_test" />
+        <activity
+            android:name=".family_modify"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".doctor_modify"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".doctor_result_control" />
+        <activity android:name=".doctor_one_patient_data" />
+        <activity android:name=".doctor_one_kind_scale" />
+        <activity android:name=".doctor_one_test_data" />
+        <activity android:name=".family_one_ad8_record_data" />
+        <activity android:name=".family_record" />
+        <activity android:name=".ad8" />
+        <activity android:name=".visitor_record" />
+        <activity android:name=".npiq1" />
+        <activity
+            android:name=".npiq2"
+            android:label="@string/title_activity_npiq2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".visitor_choose_scaleID" />
+        <activity android:name=".visitor_one_ad8_record_data" />
+        <activity android:name=".visitor_one_npiq_record_data" />
+        <activity android:name=".family_one_npiq_record_data" />
+        <activity android:name=".cdr" />
+        <activity android:name=".family_one_cdr_record_data" />
+        <activity android:name=".visitor_one_cdr_record_data" />
+        <activity android:name=".family_question" />
+        <activity android:name=".visitor_question" />
+        <activity android:name=".about_system" />
+        <activity android:name=".mmse" />
+        <activity android:name=".quiz_1" />
+        <activity android:name=".quiz_2" />
+        <activity android:name=".quiz_3" />
+        <activity android:name=".quiz_4" />
+        <activity android:name=".quiz_5" />
+        <activity android:name=".quiz_6" />
+        <activity android:name=".quiz_7" />
+        <activity android:name=".quiz_8" />
+        <activity android:name=".quiz1_ask" />
+        <activity android:name=".quiz2_ask" />
+        <activity android:name=".quiz3_ask" />
+        <activity android:name=".quiz4_ask" />
+        <activity android:name=".quiz5_ask" />
+        <activity android:name=".quiz6_ask" />
+        <activity android:name=".quiz8_ask" />
+        <activity android:name=".quiz1_ask2" />
+        <activity android:name=".quiz3_ask2" />
+        <activity android:name=".quiz6_ask2" />
+        <activity android:name=".quiz8_ask2" />
+        <activity android:name=".quiz6_ask3" />
+        <activity android:name=".quiz6_ask4" />
+        <activity android:name=".quiz7_draw" />
+        <activity android:name=".quiz7_judge" />
+        <activity
+            android:name=".map"
+            android:label="@string/title_activity_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".family_one_mmse_record_data"
+            android:label="@string/title_activity_family_one_mmse_record_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".visitor_one_mmse_record_data" />
+        <activity android:name=".moca" />
+        <activity android:name=".moca_quiz1" />
+        <activity android:name=".moca_quiz2" />
+        <activity android:name=".moca_quiz3" />
+        <activity android:name=".moca_quiz4" />
+        <activity android:name=".moca_quiz5" />
+        <activity android:name=".moca_quiz6" />
+        <activity android:name=".moca_quiz7" />
+        <activity android:name=".moca_quiz8" />
+        <activity android:name=".moca_quiz9" />
+        <activity android:name=".moca_quiz1_ask" />
+        <activity android:name=".moca_quiz2_ask" />
+        <activity android:name=".moca_quiz2_ask_draw" />
+        <activity android:name=".moca_quiz2_ask_judge" />
+        <activity android:name=".moca_quiz2_ask2" />
+        <activity android:name=".moca_quiz2_ask2_draw" />
+        <activity android:name=".moca_quiz2_ask2_judge" />
+        <activity android:name=".moca_quiz3_ask" />
+        <activity android:name=".moca_quiz4_ask" />
+        <activity android:name=".moca_quiz4_ask2" />
+        <activity android:name=".moca_quiz5_ask" />
+        <activity android:name=".moca_quiz5_ask2" />
+        <activity android:name=".moca_quiz6_ask" />
+        <activity android:name=".moca_quiz6_ask2" />
+        <activity android:name=".moca_quiz7_ask" />
+        <activity android:name=".moca_quiz7_ask2" />
+        <activity android:name=".moca_quiz8_ask" />
+        <activity android:name=".moca_quiz9_ask" />
+        <activity android:name=".family_one_moca_record_data" />
+        <activity android:name=".visitor_one_moca_record_data"></activity>
+    </application>
+
+</manifest>

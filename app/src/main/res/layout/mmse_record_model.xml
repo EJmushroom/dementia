@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/skyblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="一.定向感"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="a.時間定向力"
+                android:textSize="22sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q1score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.現在是哪一年?"
+                android:textSize="20sp"
+                android:textColor="@color/SlateGray"/>
+            <TextView
+                android:id="@+id/tv_q1YearType"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="年份類"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:visibility="visible"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q1Year"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="2017"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.今天幾月幾號 星期幾?"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_q1Month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q1Monthtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="月"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_q1Day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q1Daytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_q1Weekdaytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="星期"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q1Weekday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="六"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_q1a2quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.請不要看手錶 猜猜看現在大概幾點鐘?"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q1a2answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="深夜12點"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="b.地點定向力"
+                android:textSize="22sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q2score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        
+        <TextView
+            android:id="@+id/tv_q2quiz1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.這裡在哪一條街或哪一條路的附近?"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q2quiz1A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="新民路"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_q2quiz2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.這裡屬於哪一個鄉鎮或區?"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q2quiz2A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="西區"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_q2quiz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.(醫院用題)這裡是什麼科?/你還看什麼科?"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q2quiz3A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="精神科"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_q2quiz4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.(醫院用題)這棟樓是什麼樓?"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q2quiz4A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="叉叉樓"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_q2quiz5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.(醫院用題)這家醫院在什麼地方?/這附近叫什麼地方?"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:id="@+id/tv_q2quiz5A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="嘉義"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="二.訊息登錄"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q3score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="受測者記憶三項東西 \n回答正確的為(O) 錯誤的為(X)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3word1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="麵包"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3word2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="麵包"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="3."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3word3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="麵包"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q3A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="三.注意力及計算能力"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q4score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="100 連續減 7 持續 5 次 ( 93 86 79 72 65 )"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/q4A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="93"
+                android:layout_marginRight="5.5dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q4A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="86"
+                android:layout_marginRight="5.5dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q4A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="79"
+                android:layout_marginRight="5.5dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q4A4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="72"
+                android:layout_marginRight="5.5dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q4A5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="65"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="四.記憶力"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q5score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="經過系列減七題目後 受測者是否還記得訊息登入時所記憶的三樣東西\n回答正確的為(O) 錯誤的為(X)"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q5W1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="麵包"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q5A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q5W2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="麵包"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q5A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="3."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q5W3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="麵包"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q5A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="五.(a)語言理解"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q6score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="1.受試者在過去生活經驗中 有機會接觸或使用過的物品名稱(兩項)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q6a1W1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="受測者無法回答"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q6a1W2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="受測者無法回答"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2.在監考者念完題目後 受測者能否將題目重複念一遍\n回答正確的為(O) 錯誤的為(X)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/tv_q6a2W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="知足天地闊"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_q6a2A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="3.受測者能否將題目讀出並做出動作\n回答正確的為(O) 錯誤的為(X)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/tv_q6a3Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="請閉上眼睛"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q6a3A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="4.受測者念出十個字以內的話或句子\n記錄的答案為下"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <TextView
+            android:id="@+id/tv_q6a4A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="這是一個句子"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="五.(b)空間概念"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q7score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="受測者抄繪兩個五邊形 交叉為四邊形的圖形 回答正確的為(O) 錯誤的為(X)"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="範例："
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quiz9_draw" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="受測者："
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skyblue"
+            android:src="@drawable/quiz9_draw"
+            android:id="@+id/img_Pdraw"/>
+
+        <TextView
+            android:id="@+id/tv_q7A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="(O)"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="五.(c)操作能力"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_q8score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="0"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="受測者是否有在聽到監考者所描述的三個動作後 做出相應的動作\n回答正確的為(O) 錯誤的為(X)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/SlateGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1.舉起左手"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q8W1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2.閉上雙眼"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q8W2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="3.右手握拳"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_q8W3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(O)"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="MMSE 簡短智能檢測 總分："
+                android:textColor="@color/black"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_MMSE_total_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="30"
+                android:textColor="@color/red"/>
+       </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="評估結果："
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_MMSE_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="智能正常"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+</ScrollView>

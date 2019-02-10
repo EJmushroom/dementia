@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">權衡得失</string>
+
+    <string-array name="test">
+        <item>AD-8 極早期失智症篩檢量表</item>
+        <item>CDR 臨床失智評估量表</item>
+        <item>MMSE 簡短智能測驗</item>
+    </string-array>
+    <string-array name="languages">
+        <item>c语言</item>
+        <item>java </item>
+        <item>php</item>
+        <item>xml</item>
+        <item>html</item>
+    </string-array>
+    <string-array name="num8">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="num12">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="AD8">AD8極早期失智症篩檢量表. 可詢問長者之親屬或照顧者，近幾年來當事人是否常常出現以下情況，並記錄下來，以判斷其是否需要接受診療。</string>
+    <string name="CDR">針對阿茲海默症患者日常生活與認知功能作整體性評估的量表，是評估失智症 嚴重程度的主要工具之一。(包含 6 個功能項目：記憶、定向力、判斷與解 決問題、社區事務、家居與嗜好、個人照料)</string>
+    <string name="MMSE">評估項目包括定向感 ( 時間與地方)、注意力與計算能力 ( 訊息登錄與系列 減 7)、 ( 短期記憶 )、語言 ( 讀、寫、命名、理解 )、建構力 ( 視覺繪圖 ) 等功能，分數 從 0 ( 最差 ) 至 30 ( 最好 )。</string>
+    <string name="title_activity_npiq2">npiq2</string>
+
+    <string name="checkbox">不再顯示</string>
+    <string name="advise">&#160;1.想檢測有無失智症可選擇AD8量表\n
+        2.想檢測失智症嚴重程度可選擇CDR\n
+        3.檢測並評估認知功能選擇MMSE\n
+        4.以多元題型檢測認知功能時選擇MOCA\n
+        5.失智症病患家屬可選擇NPI-Q量表\n
+        紀錄病患各項行為的嚴重度和困擾度
+    </string>
+    <string name="settitle">建議</string>
+
+    <string name="main_introduce">你是為受測者的監考人\n請按照題目的指示與受測者\n進行提問與互動\n並判斷受測者的答案是否正確</string>
+    <string name="quiz9_introduce">點選開始檢測後 請受試者抄繪\n兩個五邊形 交叉為四邊形的圖形</string>
+    <string name="quiz9_judge">請評斷受試者的答案後\n於下方進行判斷是否符合答案?</string>
+    <string name="judge">是否符合答案?</string>
+    <string name="quiz1_introduce">點選開始檢測後向受試者詢問\n\n依照系統提示判斷答案是否正確</string>
+    <string name="quiz3_introduce">點選開始檢測後，向受試者說出指導語，確定施測者有注意或了解題目目的後，再</string>
+
+    <string-array name="quiz1_ask1_quiz">
+        <item>西元</item>
+        <item>民國</item>
+        <item>農曆</item>
+        <item>生肖年</item>
+    </string-array>
+
+    <string-array name="quiz1_ask1_day_quiz">
+        <item></item>
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string-array name="quiz1_ask2_quiz">
+        <item>現在是甚麼季節?</item>
+        <item>現在是上午、中午、下午還是晚上?</item>
+        <item>剛才吃的是早餐、午餐、晚餐、還是宵夜?</item>
+        <item>請不要看手錶，猜猜看現在大概幾點鐘?</item>
+    </string-array>
+    <string-array name="quiz2_quiz">
+        <item>1.現在這裡是哪裡?</item>
+        <item>2.你現在在這裡是幾樓?</item>
+        <item>3.這裡在哪一條街或哪一條路的附近?</item>
+        <item>4.這裡屬於哪一個鄉鎮或區?</item>
+        <item>5.這裡是哪一個縣市?</item>
+        <item>6.(醫院用題)這裡是甚麼科?/你來看甚麼科?</item>
+        <item>7.(醫院用題)這棟樓是甚麼樓?</item>
+        <item>8.(醫院用題)這家醫院在甚麼地方?/這附近叫甚麼地方?</item>
+    </string-array>
+    <string-array name="quiz3_quiz">
+        <item>麵包</item>
+        <item>青菜</item>
+        <item>老虎</item>
+        <item>藍色</item>
+        <item>汽水</item>
+        <item>西瓜</item>
+    </string-array>
+    <string-array name="quiz4_quiz">
+        <item>1.100減掉7等於多少?</item>
+        <item>2.再減掉一次7等於多少?</item>
+        <item>3.再減掉一次7等於多少?</item>
+        <item>4.再減掉一次7等於多少?</item>
+        <item>5.再減掉一次7等於多少?</item>
+    </string-array>
+    <string-array name="quiz4_answer">
+        <item>93</item>
+        <item>86</item>
+        <item>79</item>
+        <item>72</item>
+        <item>65</item>
+    </string-array>
+    <string-array name="quiz4_warning">
+        <item>請更正受試者的答案</item>
+        <item>若答案錯誤,請於下方填寫受試者的答案</item>
+    </string-array>
+    <string-array name="quiz6_ask2_quiz">
+        <item>知足天地闊</item>
+        <item>家和萬事興</item>
+        <item>沒去有來真趣味(台語)</item>
+    </string-array>
+    <string-array name="quiz6_ask3_quiz">
+        <item>請閉上眼睛</item>
+        <item>請舉起其中一隻手</item>
+    </string-array>
+    <string name="title_activity_map">map</string>
+    <string name="title_activity_family_one_mmse_record_data">family_one_mmse_record_data</string>
+
+    <string name="moca_quiz1_introduce">點選開始檢測後\n請受試者從(1)(甲)(2)(乙)依序點選\n最後到終點(戊)完成測驗</string>
+    <string name="moca_quiz2_introduce">點選開始檢測後向受試者詢問\n依照系統提示\n判斷答案是否正確</string>
+    <string name="moca_quiz2_ask1">點選開始檢測後\n請受試者照著畫出下圖的圖案</string>
+    <string name="moca_quiz2_ask2">點選開始檢測後\n請受試者劃一個時鐘\n填上所有數字\n並將時間指示為十一點十分</string>
+    <string name="moca_quiz2_judge">請評斷受試者的答案後\n於下方進行判斷</string>
+    <string name="moca_judge">是否符合答案?</string>
+
+    <string-array name="moca_quiz1_word">
+        <item>1</item>
+        <item>甲</item>
+        <item>2</item>
+        <item>乙</item>
+        <item>3</item>
+        <item>丙</item>
+        <item>4</item>
+        <item>丁</item>
+        <item>5</item>
+        <item>戊</item>
+    </string-array>
+
+    <string-array name="moca_quiz4_quiz">
+        <item>紅色</item>
+        <item>臉孔</item>
+        <item>教堂</item>
+        <item>菊花</item>
+        <item>絨布</item>
+    </string-array>
+
+    <string-array name="moca_quiz8_quiz_clue1">
+        <item>一種顏色</item>
+        <item>身體的一部分</item>
+        <item>建築的一種</item>
+        <item>花的一種</item>
+        <item>紡織品的一種</item>
+    </string-array>
+    <string-array name="moca_quiz8_quiz_clue2">
+        <item>紅色、藍色、綠色</item>
+        <item>鼻子、臉孔、手</item>
+        <item>教堂、學校、醫院</item>
+        <item>玫瑰、蘭花、菊花</item>
+        <item>麻布、棉布、絨布</item>
+    </string-array>
+
+    <string-array name="moca_quiz5_ask2_question">
+        <item>1.100減掉7等於多少?</item>
+        <item>2.再減掉一次7等於多少?</item>
+        <item>3.再減掉一次7等於多少?</item>
+        <item>4.再減掉一次7等於多少?</item>
+        <item>5.再減掉一次7等於多少?</item>
+    </string-array>
+    <string-array name="moca_quiz5_ask2_answer">
+        <item>93</item>
+        <item>86</item>
+        <item>79</item>
+        <item>72</item>
+        <item>65</item>
+    </string-array>
+    <string-array name="moca_quiz5_ask2_warning">
+        <item>請更正受試者的答案</item>
+        <item>若答案錯誤,請於下方填寫受試者的答案</item>
+    </string-array>
+
+    <string-array name="moca_quiz6_ask_word">
+        <item>我知道今天來幫忙的是小吳</item>
+        <item>當狗在房間，貓總是躲在桌子下</item>
+    </string-array>
+
+    <string-array name="moca_quiz7_ask_quiz">
+        <item>請你說說橘子與香蕉相似的地方</item>
+        <item>現在請講出尺與手錶相似的地方</item>
+        <item>現在請告訴我，火車與腳踏車相類似的地方是?</item>
+    </string-array>
+
+    <string-array name="moca_quiz7_ask_answer">
+        <item>水果</item>
+        <item>量度工具/數字</item>
+        <item>交通工具/旅遊出外的工具/有車輪</item>
+    </string-array>
+
+    <string-array name="moca_quiz9_day_quiz">
+        <item></item>
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string-array name="moca_quiz9_yeartype_quiz">
+        <item>西元</item>
+        <item>民國</item>
+        <item>農曆</item>
+        <item>生肖年</item>
+    </string-array>
+
+
+</resources>

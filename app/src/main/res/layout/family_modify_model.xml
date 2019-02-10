@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/skyblue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="病患姓名："
+                android:id="@+id/textView22"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_Mpatient_name"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/SlateGray"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rg_Mpatient_gender">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="請選擇病患性別："
+                android:id="@+id/textView20"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/rbtn_Mpatient_boy"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/rbtn_Mpatient_girl"
+                android:checked="false"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rg_Mpatient_blood">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="請選擇病患血型："
+                    android:id="@+id/textView21"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbtn_MA"
+                    android:layout_gravity="right"
+                    android:checked="false"
+                    android:textColor="@color/SlateGray"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:id="@+id/rbtn_MB"
+                    android:checked="false"
+                    android:textColor="@color/SlateGray"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB"
+                    android:id="@+id/rbtn_MAB"
+                    android:checked="false"
+                    android:textColor="@color/SlateGray"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    android:id="@+id/rbtn_MO"
+                    android:checked="false"
+                    android:textColor="@color/SlateGray"/>
+
+            <!--<RadioButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="其他"-->
+                <!--android:id="@+id/rbtn_Mother"-->
+                <!--android:checked="false" />-->
+
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="病患生日："
+                    android:id="@+id/textView28"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:id="@+id/tv_patient_birthday"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="是否修改?"
+                    android:id="@+id/textView29"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rg_Mpatient_birthday"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是"
+                    android:id="@+id/rbtn_Mbirthday_yes"
+                    android:checked="false"
+                    android:textColor="@color/SlateGray"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否"
+                    android:id="@+id/rbtn_Mbirthday_no"
+                    android:checked="true"
+                    android:textColor="@color/SlateGray"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="選擇病患生日："
+                android:id="@+id/textView27"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MdatePicker"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:visibility="gone"
+                android:calendarTextColor="@color/SlateGray"/>
+
+        </LinearLayout>
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="text"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/et_date"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:hint="請輸入病患生日：" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="家屬姓名："
+                android:id="@+id/textView23"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_Mname"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/SlateGray"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rg_Mgender">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="請選擇家屬性別："
+                android:id="@+id/textView19"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/rbtn_Mboy"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/rbtn_Mgirl"
+                android:checked="false"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="帳號（不可更改）："
+                android:id="@+id/textView24"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_Maccount"
+                android:layout_gravity="center_horizontal"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="@color/SlateGray"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rg_Mpassword">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="是否更新密碼?"
+                android:id="@+id/textView30"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:id="@+id/rbtn_Mpassword_yes"
+                android:checked="false"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:id="@+id/rbtn_Mpassword_no"
+                android:checked="true"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="新密碼："
+                android:id="@+id/textView25"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/et_Mpassword"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/SlateGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="再次輸入新密碼："
+                android:id="@+id/textView26"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/et_Mrpassword"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/SlateGray"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="確定修改"
+            android:id="@+id/btn_modify"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

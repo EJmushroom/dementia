@@ -1,0 +1,2767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ncyu.login.cdr"
+    android:background="@color/skyblue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（如家人等）有關病人記憶力的問題"
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 他/她在記憶或思考能力上是否有問題？ "
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1a. 如果有，是經常性的問題嗎（非經常性的相反）？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 他/她能夠記住最近發生的事情嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 他/她能夠記住一份簡短清單的細項（購物清單）嗎？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 在過去一年中他/她有記憶力減退的情形嗎？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup4"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:id="@+id/RadioGroup5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="5. 他/她記憶力受損的程度是否嚴重到干擾過去數年的日常活動（或退休前的活動）？（根據資訊提供者或其他人的意見） "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup5"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="6. 他/她是否在幾星期內會全然忘記發生過的重要事件（例如：旅遊、聚會、家人結婚）？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup6"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. 他/她是否會忘記重要事件的相關細節？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup7"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="8. 他/她是否會全然忘記過去較久遠的重要資訊（例如：生日、結婚紀念日、工作地點）？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup8"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. 病人是否會記得過去一週內生的事情？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup9"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9a. 病人是否會記得過去一個月內生的事情？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup10"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. 他/她是否會記得他/她何時出生？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup11"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. 他/她是否會記得 他/她在何處出生？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup12"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="12. 他/她是否會記得他/她最後就讀的是哪一所學校？(校名、地名等)"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup13"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13. 他/她是否會記得 他/她過去主要的職業/工作為何？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup14"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14. 他/她是否會記得他/她最後一份主要工作為何？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup15"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15. 他/她是否會記得他/她（或其配偶）何時退休？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup16"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（如家人等）的定位感問題："
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup17"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有多少時候他/她能正確知道以下項目："
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            android:layout_marginTop="7dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 今天是本月的幾號？"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 月份？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup18"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 年份？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup19"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 星期幾？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup20"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:text="5. 他/她是否對事件發生的時間先後關聯有困難？\n（事件與事件間發生順序的關連）"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup21"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. 他/她能夠在熟悉的街道中找到自己要去的地方嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup22"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="7. 有多少時候在住家附近以外的地方他/她知道如何\n從某一處到達另外一處？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup23"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="8. 有多少時候他/她在某個熟悉的室內有辦法去到想去\n的地方？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup24"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（家人等）有關病人解決問題能力的問題："
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup25"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="1. 一般而言，如果現在您必需評估他/她解決問題的能力，您認為他/她的能力："
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和以前狀況一樣好"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="還好，但沒有之前狀況好"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可接受"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很差"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完全無能力"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="2. 他/她處理小額金錢的計算能力（例如：換零錢，付公車票）："
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup26"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沒有喪失"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="些許喪失"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嚴重喪失"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="3. 他/她處理複雜財務或商業交易的能力（例如：餘額查詢、付清帳單）："
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup27"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView32"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沒有喪失"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton89"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="些許喪失"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嚴重喪失"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="4. 他/她處理房屋緊急狀況（例如：水管漏水，小火災）的能力？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup28"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup29"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView33"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和以前一樣好"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="因為思考有困難，所以比以前差"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比以前差"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 他/她能夠了解狀況，或說明狀況嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup29"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="6. 他/她在社交場合中能表現合宜 \n[ 以他/她一般（生病前）的舉止 ]，且與他人互動嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup30"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView35"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton98"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（家人等）有關病人在家裡以外活動的問題："
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup31"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView36"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 病人仍舊在工作嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/textView37"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView18"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView38"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不適用"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果不適用，進行第 4 題"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup32"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/SlateGray"/>
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果是，進行第 3 題"
+            app:layout_constraintTop_toBottomOf="@+id/textView39"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/SlateGray"/>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果不是，進行第 2 題"
+            app:layout_constraintTop_toBottomOf="@+id/textView40"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/SlateGray"/>
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="2. 記憶或思考上的問題是讓病人決定退休的原因之一？（跳到第 4 題）"
+            app:layout_constraintTop_toBottomOf="@+id/textView41"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView42"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton105"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton106"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton107"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="3. 病人是否因記憶或思考上的問題而覺得在工作上有明顯困難？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup33"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView43"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton108"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少或從不"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社交"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup34"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 他/她曾經開車嗎？ "
+            app:layout_constraintTop_toBottomOf="@+id/textView44"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView45"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="病人目前開車嗎？ "
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup35"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView45"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView46"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果沒有，是因為記憶或思考上的問題嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup36"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView45"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView47"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="5. 如果他/她仍有在開車，有任何因思考能力差而造成\n的問題或危險性嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup37"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup38"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView48"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. 他/她會因需要而獨自去購物嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup38"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup39"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView49"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少或從不 "
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. 他/她有能力獨自從事在家以外的活動嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup39"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView50"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton124"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很少或從不"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton125"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有時"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton126"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="經常"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton127"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. 他/她在家庭以外有參加社交活動嗎？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup40"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup41"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView51"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton128"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton129"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="9. 如果一位無心的人看見了病人的舉止，會不會認為\n他/她生病了？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup41"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup42"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView52"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton130"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="10. 如果在安養院，他/她是否能維持良好社交活動\n（有意識地參與）？"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup42"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup43"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView53"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（如家人等）有關病人家庭活動及嗜好的問題："
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup43"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日活動"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView54"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 從事家務工作的能力"
+            app:layout_constraintTop_toBottomOf="@+id/textView55"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView38"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView56"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 (沒有喪失)"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton135"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton136"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 (嚴重喪失)"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 他/她從事家務工作能力的程度："
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup44"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView56"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView57"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton137"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="僅可從事不具意義的功能"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton138"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="僅可從事有限的活動"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton139"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可獨立從事某些活動"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可從事一般活動，但未達一般水準"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一般活動功能正常"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="給看護者（家人等）對於病人自我照顧能力的問題："
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup45"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*您對於他/她在以下事項心智能力的評估："
+            android:textColor="@color/bluegreen"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView58"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. 穿衣服"
+            app:layout_constraintTop_toBottomOf="@+id/textView59"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView56"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup46"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView60"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 不需要幫忙"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 偶爾會扣錯扣子等等"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 穿衣順序錯誤，常常會忘記一些項目"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton145"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 無法自行穿衣"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. 清洗、梳理"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup46"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView56"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup47"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView61"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton147"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 不需要幫忙"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton148"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 需要提醒"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton149"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 有時需要幫忙"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 一直或幾乎一直需要幫忙"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. 飲食習慣"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup47"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView56"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView62"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 能保持清潔；能正確使用餐具"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton152"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 吃的到處都是；僅會使用湯匙"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton153"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 只能夠吃簡單的固態食物"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton154"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 需完全接受餵食"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. 大小便控制"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup48"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView56"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup49"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView63"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton155"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 可完全正常控制"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton156"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 偶爾尿床 "
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton157"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 常常尿床"
+                android:textColor="@color/SlateGray"/>
+
+            <RadioButton
+                android:id="@+id/radioButton158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 大小便皆失禁"
+                android:textColor="@color/SlateGray"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/abc1"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroup49"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            android:text="只有記憶力才是主要項目，其他都是次要項目。"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            android:text="如於兩個分數中無法決定哪一個，"
+            app:layout_constraintTop_toBottomOf="@+id/textView64"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            android:text="請輸入較高(較嚴重)的分數。"
+            app:layout_constraintTop_toBottomOf="@+id/textView65"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/bluegreen"
+            android:text="( 評分標準可以點選下方每個項目名稱查看 )"
+            app:layout_constraintTop_toBottomOf="@+id/textView66"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="327dp"
+            android:layout_height="318dp"
+            app:srcCompat="@drawable/cdr_score"
+            app:layout_constraintTop_toBottomOf="@+id/textView67"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="349dp"
+            android:layout_height="221dp"
+            app:srcCompat="@drawable/cdr45"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="記憶力"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn1"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/SlateGray"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:text="定向力"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn2"
+            android:layout_marginLeft="9dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="9dp"
+            android:gravity="center"
+            android:textColor="@color/SlateGray"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:text="判斷力與問題解決能力"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn3"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/SlateGray"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:text="在家裡以外的活動"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn4"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/SlateGray"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn4"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:text="家庭活動及嗜好"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn4"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn5"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/SlateGray"
+            android:gravity="center"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn5"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:text="自我照顧能力"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn5"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/btn6"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:hint="請輸入"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/SlateGray"
+            android:textColorHint="@color/SlateGray"/>
+
+        <Button
+            android:id="@+id/btnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="計算CDR分數"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/editText3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/btnScore"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/editText3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnCommit"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="提 交"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/editText3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

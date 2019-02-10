@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="回答正確的為( O ) 錯誤的為( X )"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一.交替轉換"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz1_answer"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz1_score"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="二.視覺空間建構"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz2_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1.範例："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quiz2_square"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="受測者："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quiz2_square"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/img_Psquare"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz2_ask_answer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2.範例："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quiz2_ask2_clock"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="受測者："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/quiz2_ask2_clock"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/img_Pclock"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="形狀："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( O )"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"
+                    android:id="@+id/tv_moca_quiz2_ask2_answer1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="數字："
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( O )"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"
+                    android:id="@+id/tv_moca_quiz2_ask2_answer2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指針："
+                android:textSize="20sp"
+                android:textColor="@color/SlateGray"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:id="@+id/tv_moca_quiz2_ask2_answer3" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="三.命名"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz3_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="1.獅子"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quiz3_lion"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz3_answer1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="2.犀牛"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quiz3_rigno"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz3_answer2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="3.駱駝"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quiz3_camal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz3_answer3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="四.記憶"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz4_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="詞語"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp"
+                    android:text="第一次"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/SlateGray"
+                    android:textSize="16sp"
+                    android:text="第二次"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第一個"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_moca_quiz4_word_bundle1"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_first1"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_second1"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第二個"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_moca_quiz4_word_bundle2"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_first2"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_second2"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第三個"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_moca_quiz4_word_bundle3"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_first3"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_second3"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第四個"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_moca_quiz4_word_bundle4"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_first4"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_second4"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第五個"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_moca_quiz4_word_bundle5"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_first5"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:id="@+id/tv_moca_quiz4_answer_second5"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="五.專注"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz5_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="覆述21854"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tv_moca_quiz5_ask1_answer1"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="覆述742"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tv_moca_quiz5_ask1_answer2"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="讀1拍手"
+                    android:textSize="20sp"
+                    android:textColor="@color/SlateGray"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="( O )"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tv_moca_quiz5_ask1_answer3"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="100連續減7持續5次( 93 86 79 72 65 )"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/SlateGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/tv_moca_quiz5_ask2_answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="93"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tv_moca_quiz5_ask2_answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="86"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tv_moca_quiz5_ask2_answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="79"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tv_moca_quiz5_ask2_answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="72"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tv_moca_quiz5_ask2_answer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="65"
+                    android:layout_marginRight="22dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="( O )"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:id="@+id/tv_moca_quiz5_ask2_isRight"
+            android:layout_marginTop="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="六.重複句子"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz6_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="1.我知道今天來幫忙的是小吳"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:id="@+id/tv_moca_quiz6_ask_quiz_isRight1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="2.當狗在房間，貓總是躲在桌子下"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:id="@+id/tv_moca_quiz6_ask_quiz_isRight2"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="3.計時1分鐘所講出的水果數目"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:id="@+id/tv_moca_quiz6_ask2_answer"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="七.抽象概念"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz7_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="1.現在請講出尺與手錶相似的地方"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz7_answer1"/>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="2.現在請告訴我，火車與腳踏車相類似的地方是"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="( O )"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:gravity="right"
+                android:id="@+id/tv_moca_quiz7_answer2"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="八.延遲記憶"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz8_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="詞語"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="是否記得"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第一個"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_moca_quiz8_word_bundle1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:id="@+id/tv_moca_quiz8_answer1"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第二個"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_moca_quiz8_word_bundle2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:id="@+id/tv_moca_quiz8_answer2"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第三個"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_moca_quiz8_word_bundle3"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:id="@+id/tv_moca_quiz8_answer3"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第四個"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_moca_quiz8_word_bundle4"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:id="@+id/tv_moca_quiz8_answer4"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第五個"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_moca_quiz8_word_bundle5"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:text="( O )"
+                android:id="@+id/tv_moca_quiz8_answer5"
+                android:layout_marginTop="2dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="九.定向"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:text="0"
+                android:id="@+id/tv_moca_quiz9_score"
+                android:layout_marginRight="8dp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="用何種計年方式？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="西元"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="幾年？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2017"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="幾月？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="幾日？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="31"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="星期幾？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="在哪個城市？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="嘉義"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SlateGray"
+                android:textSize="20sp"
+                android:text="在什麼地點？"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="嘉義大學"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tv_moca_quiz9_answer7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:text="MOCA總分："/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                android:id="@+id/tv_moca_MOCA_total_score"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_moca_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="異常 建議至醫院做更進一步的檢查"
+            android:textSize="22sp"
+            android:textColor="@color/SlateGray"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

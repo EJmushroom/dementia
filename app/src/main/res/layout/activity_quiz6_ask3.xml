@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ncyu.login.quiz6_ask3"
+    android:background="@color/skyblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/quiz6_ask3_quiz_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="3.請點選開始後\n讓受測者念出按鈕中的文字\n並做出動作\n結束後請再點選一次按鈕"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/quiz6_ask3_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="onClick2"
+            android:text="開始"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/quiz6_ask3_quiz_judge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="受試者若能唸出並做出正確動作時\n為作答正確 否則作答錯誤"
+            android:textSize="20dp"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/quiz6_ask3_quiz_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClick2"
+                android:text="正確"
+                android:textSize="20dp"
+                android:enabled="false"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/quiz6_ask3_quiz_wrong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClick2"
+                android:text="錯誤"
+                android:textSize="20dp"
+                android:enabled="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:layout_margin="10dp"
+            android:text="下一題"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
